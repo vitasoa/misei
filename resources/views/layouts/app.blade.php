@@ -12,8 +12,7 @@
 		<!--script src="{{ asset('js/app.js') }}" defer></script-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
 		<!-- Fonts -->
-		<link rel="dns-prefetch" href="//fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<!--link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"-->
 		<!-- Styles -->
 		<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
@@ -21,7 +20,7 @@
 		<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css" />
 	</head>
-	<body class="container">
+	<body class="container" style="padding-right:0px;padding-left:0px">
 		<div class="loading-overlay" id="loading-overlay">
             <div class="loading-overlay-image-container">
                 <div class="loader">Loading...</div>
@@ -136,7 +135,7 @@
 				</div>
 			</div>
 			<div class="copyright-section">
-				<div class="clearfix row ">
+				<div class="clearfix row" style="text-align:left">
 					<span class="copytext">
 						© MISEI. All rights reserved. | Design By:
 						<a href="#">BSchn AND</a>

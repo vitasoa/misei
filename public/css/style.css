@@ -1362,7 +1362,7 @@ icon-style
     font-size: 13px;
     line-height: 24px;
     color: #969595;
-    border: 1px solid #F1F1F1;
+    border: 1px solid #337ab7;
     border-radius: 0;
     box-shadow: none;
 }
@@ -1886,5 +1886,11 @@ fieldset[disabled] .form-control {
 
 .alert-success {
 	text-align: center;
+}
+
+@media (max-width: 766px) {
+.hero-slide .carousel-inner>.item>img {
+    height: auto !important;
+}
 }
 

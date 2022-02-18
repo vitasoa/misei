@@ -34,7 +34,7 @@
 						<i class="fa fa-rocket f-left">
 						</i>
 						<span>
-							5
+							{{ $countDaysEmployee }}
 						</span>
 					</h2>
 					<p class="m-b-0">
@@ -50,13 +50,13 @@
 			<div class="card bg-c-yellow order-card">
 				<div class="card-block">
 					<h6 class="m-b-20">
-						Nombre de jours d'absence de mois précédent
+						Nombre de jours d'absence du mois
 					</h6>
 					<h2 class="text-right">
 						<i class="fa fa-refresh f-left">
 						</i>
 						<span>
-							3
+							{{ $countOffDaysEmployee }}
 						</span>
 					</h2>
 					<p class="m-b-0">
@@ -78,7 +78,7 @@
 						<i class="fa fa-credit-card f-left">
 						</i>
 						<span>
-							0
+							{{ $countRetardEmployee }}
 						</span>
 					</h2>
 					<p class="m-b-0">

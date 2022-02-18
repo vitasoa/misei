@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 
 Route::get('/gallery', function () {
@@ -29,6 +29,7 @@ Route::get('/gallery', function () {
 
 Route::get('/checking', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/checking', [App\Http\Controllers\HomeController::class, 'postChecking'])->name('post.checking');
+Route::post('/contact/send', [App\Http\Controllers\NoAuthController::class, 'contactSend'])->name('contact.send');
 
 Route::group(['prefix' => 'employee'], function() {
     Route::get('/', [App\Http\Controllers\EmployeeController::class, 'index'])->name('employees.index');

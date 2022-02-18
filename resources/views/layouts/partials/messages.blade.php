@@ -4,7 +4,7 @@
 	<div class="alert alert-success" role="alert">
 		<i class="fa fa-check">
 		</i>
-		{{ $msg }}
+		{!! html_entity_decode($msg) !!}
 	</div>
 	@endforeach @else
 	<div class="alert alert-success" role="alert">
